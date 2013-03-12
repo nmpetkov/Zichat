@@ -1,0 +1,474 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zikula 1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-06-21 20:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: templates/plugins/function.zichat.php:6
+msgid "Zichat plugin"
+msgstr ""
+
+#: lib/Zichat/Api/User.php:31
+msgid "Admin"
+msgstr ""
+
+#: lib/Zichat/Api/User.php:37
+msgid "Standard caching"
+msgstr ""
+
+#: lib/Zichat/Api/User.php:39
+msgid "Never cached"
+msgstr ""
+
+#: lib/Zichat/Api/User.php:41
+msgid "Partial cache"
+msgstr ""
+
+#: lib/Zichat/Api/User.php:43
+msgid "Multiple page caching"
+msgstr ""
+
+#: lib/Zichat/Api/User.php:45
+msgid "is_cached demo"
+msgstr ""
+
+#: lib/Zichat/Api/User.php:47
+msgid "Caching explained"
+msgstr ""
+
+#: lib/Zichat/Api/User.php:52
+msgid "Cache demo"
+msgstr ""
+
+#: lib/Zichat/Api/Admin.php:31
+msgid "Settings"
+msgstr ""
+
+#: lib/Zichat/Api/Admin.php:37
+msgid "Module Information"
+msgstr ""
+
+#: lib/Zichat/Installer.php:29
+msgid "Error! Could not create the table."
+msgstr ""
+
+#: lib/Zichat/Controller/User.php:143
+#, php-format
+msgid "Just this version of '%s' cleared from cache."
+msgstr ""
+
+#: lib/Zichat/Controller/User.php:147
+#, php-format
+msgid "All versions of '%s' cleared from cache."
+msgstr ""
+
+#: lib/Zichat/Controller/Admin.php:55
+msgid "Done! Updated the Zichat configuration."
+msgstr ""
+
+#: lib/Zichat/Version.php:19 templates/user/cachedemo/info.tpl:1
+#: templates/user/cachedemo/partialcache.tpl:1
+#: templates/user/cachedemo/standard.tpl:1
+#: templates/user/cachedemo/uniquepages.tpl:1
+#: templates/user/cachedemo/checkiscached.tpl:1
+#: templates/user/cachedemo/nevercached.tpl:1 templates/user/view.tpl:1
+msgid "Zichat"
+msgstr ""
+
+#. !used in URL - nospaces, no special chars, lcase
+#: lib/Zichat/Version.php:20
+msgid "zichat"
+msgstr ""
+
+#: lib/Zichat/Version.php:21
+msgid "Zikula Module Zichat!"
+msgstr ""
+
+#: lib/Zichat/Block/Zichat.php:32
+msgid "Sample Zichat Block"
+msgstr ""
+
+#: templates/admin/info.tpl:4
+msgid "Zichat Info"
+msgstr ""
+
+#: templates/admin/info.tpl:4 templates/admin/modifyconfig.tpl:4
+msgid "version"
+msgstr ""
+
+#: templates/admin/info.tpl:6
+msgid "Information"
+msgstr ""
+
+#: templates/admin/menu.tpl:3
+msgid "Zichat"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:4
+msgid "Zichat settings"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:9
+msgid "General settings"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:11
+msgid "Display Admin Zichat"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:16
+msgid "Save"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:17
+msgid "Cancel"
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:6
+msgid "Cache Demo: Information about caching"
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:10
+msgid "Demonstrations"
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:12
+msgid ""
+"See the menu above (Cache demo) and its sub-items for demonstrations of "
+"caching techniques. Be sure to see the PHP and template code to understand "
+"how each is achieved."
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:14
+msgid "Render Caching"
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:16
+#, php-format
+msgid ""
+"Caching is a technology which speeds up pageloads by storing a version of a "
+"page in the filesystem and loads that page (for a set time period or "
+"'lifetime') instead of reloading all the information from the database. "
+"Cached files are stored in %s and are specific to module, cacheId and "
+"template."
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:18
+msgid "Enable render cache"
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:18 templates/user/cachedemo/info.tpl:28
+#: templates/user/cachedemo/info.tpl:31
+msgid "Checkbox (enable/disable)"
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:19
+msgid ""
+"Render caching handles all <strong>module templates</strong>. It does not "
+"handle <strong>theme templates</strong>, but the concept is essentially the "
+"same for both. When enabled, Zikula will automatically cache templates for "
+"the length of time set in 'render cache lifetime'. This means that any data "
+"in the module template that is changed will not display as changed until the "
+"cache expires. This functionality is not dependant on the module code. The "
+"template will be cached automatically, although this behavior can be "
+"overridden with module code (see various demos)."
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:21
+msgid "Render cache lifetime"
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:21
+msgid "Integer (default 3600)"
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:22
+msgid ""
+"The render cache lifetime is the number of seconds that the cached template "
+"will 'live' or be displayed before being checked for new data. Entering a "
+"zero (0) for this value is essentially disabling caching. Entering negative "
+"one (-1) will set the cache output to never expire."
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:24
+msgid "Render Compilation"
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:26
+#, php-format
+msgid ""
+"Render compiling is done for all templates, one cannot disable it. Compiling "
+"basically converts the special template syntax into PHP and makes it "
+"understandable to the PHP rendering engine. Compiled files are stored in %s "
+"and are specific to language, theme and module."
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:28
+msgid "Render compile check"
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:29
+msgid ""
+"Render compilation is a check to see if the template has changed since its "
+"last display. When enabled, Zikula will automatically check to see if "
+"templates have changed since their last display and if so, display them even "
+"if the cache lifetime has not expired, thus resetting the cache lifetime. If "
+"the template has not changed, the cached template is displayed if the "
+"lifetime has not expired."
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:31
+msgid "Render force compile"
+msgstr ""
+
+#: templates/user/cachedemo/info.tpl:32
+msgid ""
+"Enabling force compile will regenerate all cached templates with each page "
+"refresh. This essentially disables caching, but allows the mechanism of "
+"caching to function. This is essentially only useful for debugging purposes."
+msgstr ""
+
+#: templates/user/cachedemo/partialcache.tpl:6
+msgid "Cache Demo: partial cache"
+msgstr ""
+
+#: templates/user/cachedemo/partialcache.tpl:10
+#: templates/user/cachedemo/checkiscached.tpl:10
+msgid "Always Cached"
+msgstr ""
+
+#: templates/user/cachedemo/partialcache.tpl:11
+#: templates/user/cachedemo/uniquepages.tpl:29
+#: templates/user/cachedemo/checkiscached.tpl:11
+msgid "Cached timestamp"
+msgstr ""
+
+#: templates/user/cachedemo/partialcache.tpl:11
+#: templates/user/cachedemo/partialcache.tpl:17
+#: templates/user/cachedemo/standard.tpl:10
+#: templates/user/cachedemo/standard.tpl:21
+#: templates/user/cachedemo/modvar_report.tpl:6
+#: templates/user/cachedemo/modvar_report.tpl:11
+#: templates/user/cachedemo/uniquepages.tpl:29
+#: templates/user/cachedemo/uniquepages.tpl:34
+#: templates/user/cachedemo/checkiscached.tpl:11
+#: templates/user/cachedemo/nevercached.tpl:9
+msgid "seconds"
+msgstr ""
+
+#: templates/user/cachedemo/partialcache.tpl:12
+#: templates/user/cachedemo/checkiscached.tpl:12
+#, php-format
+msgid ""
+"This number should only advance when the module-set cache lifetime expires (%"
+"s seconds)."
+msgstr ""
+
+#: templates/user/cachedemo/partialcache.tpl:15
+msgid "Never Cached"
+msgstr ""
+
+#: templates/user/cachedemo/partialcache.tpl:17
+#: templates/user/cachedemo/standard.tpl:21
+#: templates/user/cachedemo/uniquepages.tpl:34
+msgid "Uncached current timestamp"
+msgstr ""
+
+#: templates/user/cachedemo/partialcache.tpl:18
+#: templates/user/cachedemo/standard.tpl:22
+#: templates/user/cachedemo/uniquepages.tpl:35
+#: templates/user/cachedemo/nevercached.tpl:10
+msgid ""
+"This number should advance with every page refresh, irrespective of cache "
+"settings."
+msgstr ""
+
+#: templates/user/cachedemo/partialcache.tpl:23
+#: templates/user/cachedemo/standard.tpl:27
+#: templates/user/cachedemo/checkiscached.tpl:17
+#: templates/user/cachedemo/nevercached.tpl:13
+msgid "Refresh page"
+msgstr ""
+
+#: templates/user/cachedemo/standard.tpl:6
+msgid "Cache Demo: Standard caching"
+msgstr ""
+
+#: templates/user/cachedemo/standard.tpl:10
+msgid "Possibly cached current timestamp"
+msgstr ""
+
+#: templates/user/cachedemo/standard.tpl:13
+#, php-format
+msgid ""
+"Render cache is %s: this number should only advance when the cache lifetime "
+"expires. <br />This cache lifetime is set in the Theme module."
+msgstr ""
+
+#: templates/user/cachedemo/standard.tpl:15
+#, php-format
+msgid "Render cache is %s: this number should advance with every page refresh."
+msgstr ""
+
+#: templates/user/cachedemo/modvar_report.tpl:2
+msgid "Cache-related modvars"
+msgstr ""
+
+#: templates/user/cachedemo/modvar_report.tpl:3
+msgid "Settings from the Theme module"
+msgstr ""
+
+#: templates/user/cachedemo/modvar_report.tpl:5
+msgid "enable render cache"
+msgstr ""
+
+#: templates/user/cachedemo/modvar_report.tpl:6
+msgid "render cache lifetime"
+msgstr ""
+
+#: templates/user/cachedemo/modvar_report.tpl:7
+msgid "render compile check"
+msgstr ""
+
+#: templates/user/cachedemo/modvar_report.tpl:8
+msgid "render force compile"
+msgstr ""
+
+#: templates/user/cachedemo/modvar_report.tpl:10
+msgid "enable theme cache"
+msgstr ""
+
+#: templates/user/cachedemo/modvar_report.tpl:11
+msgid "theme  lifetime"
+msgstr ""
+
+#: templates/user/cachedemo/modvar_report.tpl:12
+msgid "theme compile check"
+msgstr ""
+
+#: templates/user/cachedemo/modvar_report.tpl:13
+msgid "theme force compile"
+msgstr ""
+
+#: templates/user/cachedemo/modvar_report.tpl:17
+msgid ""
+"The current settings may cause some parts<br />of this demo not to function "
+"as intended."
+msgstr ""
+
+#: templates/user/cachedemo/modvar_report.tpl:20
+msgid "Change Theme settings"
+msgstr ""
+
+#: templates/user/cachedemo/uniquepages.tpl:6
+msgid "Cache Demo: Multiple page caching"
+msgstr ""
+
+#: templates/user/cachedemo/uniquepages.tpl:16
+msgid "Choose page number"
+msgstr ""
+
+#: templates/user/cachedemo/uniquepages.tpl:17
+msgid "Enter integer 1 - 9"
+msgstr ""
+
+#: templates/user/cachedemo/uniquepages.tpl:19
+#: templates/user/cachedemo/uniquepages.tpl:20
+#: templates/user/cachedemo/uniquepages.tpl:21
+msgid "Submit"
+msgstr ""
+
+#: templates/user/cachedemo/uniquepages.tpl:20
+msgid "Reset template"
+msgstr ""
+
+#: templates/user/cachedemo/uniquepages.tpl:21
+msgid "Reset all templates"
+msgstr ""
+
+#: templates/user/cachedemo/uniquepages.tpl:27
+msgid "Current page displayed"
+msgstr ""
+
+#: templates/user/cachedemo/uniquepages.tpl:30
+#, php-format
+msgid ""
+"This number should only advance when the module-set cache lifetime expires "
+"(current setting: %s seconds)."
+msgstr ""
+
+#: templates/user/cachedemo/uniquepages.tpl:37
+msgid "cache id"
+msgstr ""
+
+#: templates/user/cachedemo/uniquepages.tpl:41
+msgid ""
+"Resubmit the form multiple times with the same and different values to see "
+"the effects of caching on the timestamps."
+msgstr ""
+
+#: templates/user/cachedemo/uniquepages.tpl:42
+msgid ""
+"Click <strong>reset template</strong> to clear the cache for this page only."
+msgstr ""
+
+#: templates/user/cachedemo/uniquepages.tpl:43
+msgid ""
+"Click <strong>reset all templates</strong> to clear the cache for all pages "
+"using this template."
+msgstr ""
+
+#: templates/user/cachedemo/checkiscached.tpl:6
+msgid "Cache Demo: is_cached"
+msgstr ""
+
+#: templates/user/cachedemo/checkiscached.tpl:14
+msgid ""
+"This page will take a long time to load the first time, but on repeated "
+"reloads it will load faster due to a check for is_cached(). When the cache "
+"is regenerated, it takes an additional 5 seconds."
+msgstr ""
+
+#: templates/user/cachedemo/nevercached.tpl:5
+msgid "Cache Demo: Never cached"
+msgstr ""
+
+#: templates/user/cachedemo/nevercached.tpl:9
+msgid "Current timestamp"
+msgstr ""
+
+#: templates/user/view.tpl:7
+msgid "Admin says Zichat"
+msgstr ""
+
+#: templates/user/view.tpl:9
+msgid "Admin did not say Zichat"
+msgstr ""
+
+#: templates/user/view.tpl:15
+msgid "External function executes true."
+msgstr ""
+
+#: templates/blocks/zichat_modify.tpl:2
+msgid "Display Admin Zichat in the block"
+msgstr ""
+
+#: templates/blocks/zichat.tpl:2
+msgid "Zichat Block"
+msgstr ""
+
+#: templates/blocks/zichat.tpl:3
+msgid "Admin says Zichat!"
+msgstr ""
