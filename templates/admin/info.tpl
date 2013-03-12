@@ -5,7 +5,13 @@
 </div>
 
 <div>
-    <p>{gt text="This module integrates chat rooms in various places you may need."}</p>
+    <p>
+    {gt text="This module integrates chat rooms in various places you may need."}
+    <br /><br />
+    <a href="https://github.com/nmpetkov/Zichat" target="_blank"><b>{gt text="Project page"}</b></a>
+    &nbsp;|&nbsp;<a href="{modurl modname='Zichat' type='user' func='main'}"><b>{gt text="Frontend"}</b></a>
+    <br /><br />
+    </p>
 </div>
 
 <table class="z-datatable">
