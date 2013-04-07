@@ -223,12 +223,17 @@ class Ztools
      * Zikula user data.
      *
      * @param integer  $userid
+     * @param integer  $username Valid if $userid === false
      *
      * @return array with data from Zikula users table
      */
-    public static function ZikulaUserData($userid)
+    public static function ZikulaUserData($userid, $username = false)
     {
-        $sql = 'SELECT * FROM `users` WHERE `uid`="'.$userid.'"';
+        if ($userid === false ) {
+            $sql = 'SELECT * FROM `users` WHERE LOWER(`uname`)="'.strtolower($username).'"';
+        } else {
+            $sql = 'SELECT * FROM `users` WHERE `uid`="'.$userid.'"';
+        }
         self::$userdata = self::MysqlQueryFetchArray($sql);
 
         return self::$userdata;
