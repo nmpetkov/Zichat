@@ -13,3 +13,16 @@ http://sourceforge.net/projects/phpfreechat/. Many features, but will be depreci
 
 ### AJAX Chat
 Current version (0.8.6), http://frug.github.com/AJAX-Chat/, https://github.com/Frug/AJAX-Chat. Full of features. MySql database tables. AJAX. Integrated with iframes. Zikula users are integrated.
+
+## Installation
+
+As ordinary Zikula module: upload to modules directory, go to Admin panel, Extensions, Install the module.
+
+# Contribute
+
+Contributions, either pull requests or reporting issues, are welcome.
+
+# Donate
+
+To help support and develop this module in the future, donations are more then welcome. You can [make a donation here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KGE62VGLZHCLL). 
+
