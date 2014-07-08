@@ -1,5 +1,5 @@
 {if $vars.zichat_itype == 'iframe'}
-<iframe src="{getbaseurl}{$vars.vendor_url}/zichat.php?{$vars1|@http_build_query}" width="100%" height="{$vars1.height+200}px" border="0" frameborder="0">
+<iframe src="{$baseurl}{$vars.vendor_url}/zichat.php?{$vars1|@http_build_query}" width="100%" height="{$vars1.height+200}px" border="0" frameborder="0">
 </iframe>
 {else}
 <div id="zichat_freechat">

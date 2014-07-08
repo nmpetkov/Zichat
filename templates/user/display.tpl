@@ -1,5 +1,5 @@
 <div>
-{if $vars.blockid}
+{if isset($vars.blockid) && $vars.blockid}
     {block bid=$vars.blockid}
 {else}
     {include file='chatinclude.tpl'}

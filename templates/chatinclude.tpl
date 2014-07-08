@@ -1,5 +1,5 @@
 {if $vars.chat_type == 'freechat'}
-    {if $vars.chat_title}{$vars.chat_title}<br /><br />{/if}
+    {if isset($vars.chat_title) && $vars.chat_title}{$vars.chat_title}<br /><br />{/if}
     {include file='chatinclude_freechat.tpl'}
 {elseif $vars.chat_type == 'freechat1'}
     {include file='chatinclude_freechat1.tpl'}

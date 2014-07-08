@@ -22,9 +22,13 @@ class Zichat_Controller_Admin extends Zikula_AbstractController
         $this->throwForbiddenUnless(SecurityUtil::checkPermission('Zichat::', '::', ACCESS_ADMIN), LogUtil::getErrorMsgPermission());
 
         // get all groups
-        $groups = UserUtil::getGroups('', 'ORDER BY gid');
+        if (Zikula_Core::VERSION_NUM < '1.4.0') {
+            $groups = UserUtil::getGroups('', 'ORDER BY gid');
+        } else {
+            $groups = UserUtil::getGroups(array(), array('gid' => 'ASC'));
+        }
         // count groups
-        $groups[count] = count($groups, 0);
+        $groups['count'] = count($groups, 0);
 
         $this->getView()->assign('groups', $groups);
 
