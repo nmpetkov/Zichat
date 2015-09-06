@@ -58,12 +58,18 @@ class Ztools
         $configfile = '';
         $updirprefix = '';
         for ($i = 1; $i <= $maxdeeplevel; $i++) {
-            $configfile = __DIR__.$updirprefix.'/config/config.php';
+            $configfile = __DIR__.$updirprefix.'/config/personal_config.php';
             if (file_exists($configfile)) {
                 $configfile = realpath($configfile);
                 break;
+            } else {
+                $configfile = __DIR__.$updirprefix.'/config/config.php';
+                if (file_exists($configfile)) {
+                    $configfile = realpath($configfile);
+                    break;
+                }
             }
-            $updirprefix .= '/..';;
+            $updirprefix .= '/..';
         }
 
         return $configfile;
